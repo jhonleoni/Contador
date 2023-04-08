@@ -9,36 +9,41 @@
 </head>
 <body>
     <header>
-        <h1>Buscar imagem por idade</h1>
+        <h1>Vamos contar?</h1>
+        <div>
+            <img id="img123" src="pngwing.png" alt="" style="margin-bottom: 45px;">
+        </div>
     </header>
     <section>
-        <div>
-            <p><label for="idade">
-                Ano de nascimento:
-                <input type="number" name="txtano" id="txtano">
-               </label>
-            </p>
-            <p><label for="genero">
-                Gênero:
-                <input type="radio" name="radiogen" id="masc" checked>
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radiogen" id="fem">
-            <label for="fem">Feminino</label>
-            
-            </p>
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </label>
-            </p>
         
+        
+        <div id="dados">
 
+          <p><label for="inic">Contagem de: <input type="number" name="inic" id="inic"></label>
+    </p> 
+          <p>
+             <label for="fim">Até: <input type="number" name="fim" id="fim"></label>
+          </p>
+          <p>
+            <label for="pula">
+                Pulando de: <input type="number" name="pula" id="pula">
+            </label>
+          </p> 
+          <p>
+            <label for="contar">
+                <input type="button" value="Contar" onclick="contar()">
+            </label>
+          </p>
+
+          
+        
         </div>
         <div id="res">
-Preencha os dados acima para ver o resultado!
+
         </div>
     </section>
     <footer>
-        <p>&copy; jhonyalmeidael</p>
+        <p>&copy; jhonleoni</p>
     </footer>
     <script src="script.js"></script>
 </body>
